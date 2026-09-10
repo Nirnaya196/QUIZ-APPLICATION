@@ -1,0 +1,47 @@
+[
+  {
+    "id": "js-sample-1",
+    "category": "custom",
+    "difficulty": "medium",
+    "question": "Which array method returns a new array with all elements that pass the provided test function?",
+    "options": ["map()", "filter()", "reduce()", "forEach()"],
+    "correct": 1,
+    "hint": "It filters out items that return false.",
+    "explanation": "Array.prototype.filter() creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function."
+  },
+  {
+    "id": "js-sample-2",
+    "category": "custom",
+    "difficulty": "easy",
+    "question": "Which keyword is used to declare a block-scoped variable that cannot be reassigned?",
+    "options": ["var", "let", "const", "static"],
+    "correct": 2,
+    "hint": "Short for 'constant'.",
+    "explanation": "The 'const' declaration creates block-scoped constants that cannot be reassigned through reassignment."
+  },
+  {
+    "id": "js-sample-3",
+    "category": "custom",
+    "difficulty": "hard",
+    "question": "What is the output of `[] + []` in JavaScript?",
+    "options": ["\"\"", "0", "NaN", "[object Object]"],
+    "correct": 0,
+    "hint": "Both arrays convert to empty strings before concatenation.",
+    "explanation": "When using the + operator with two arrays, JavaScript converts both to primitive string representations (\"\") and concatenates them to produce an empty string (\"\")."
+  },
+  {
+    "id": "js-sample-4",
+    "category": "custom",
+    "difficulty": "medium",
+    "question": "What is the purpose of the `Promise.allSettled()` method?",
+    "options": [
+      "Rejects immediately if any promise fails",
+      "Waits for all promises to settle (resolve or reject) and returns an array of outcome objects",
+      "Resolves only the fastest promise",
+      "Cancels remaining promises after the first resolution"
+    ],
+    "correct": 1,
+    "hint": "Unlike Promise.all, it never short-circuits on rejection.",
+    "explanation": "Promise.allSettled() returns a promise that fulfills after all of the given promises have either fulfilled or rejected, with an array of objects that each describe the outcome of each promise."
+  }
+]
